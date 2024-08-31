@@ -5,19 +5,18 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
-main{
-    background: darkgoldenrod url(img2.avif) no-repeat;
-}
+
 .top{
     position: fixed;
-    transform: translateX(60vh);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
-
+ol li{
+    list-style: none;
+    display: inline-block;
+    /* text-align: center; */
+}
 .top a{
     text-decoration: none;
     padding: 40px 20px;
@@ -25,10 +24,10 @@ main{
     color: #000;
 }
 .sub1{
-    z-index: 1;
     background-image: url(img1.avif);
     background-position:center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -37,20 +36,23 @@ main{
 }
 
 .sub2{
-    background-image: url(img4.avif);
+    background-image: url(img3.avif);
     background-position:center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
 .sub3{
-    background-image: url(img3.avif);
+    background-image: url(img4.avif);
     background-position:center;
     background-repeat: no-repeat;
+    background-attachment:fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -69,7 +71,6 @@ img{
     width: 550px;
     height: 350px;
     border-radius: 10px;
-    /* padding-right: 30px; */
     margin: 0 30px 0 0;
 }
 
@@ -80,3 +81,82 @@ footer{
     width: 100%;
     text-align: center;
 }
+
+@media screen and (max-width: 780px) {
+   .top{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+   }
+   .acr{
+    display: flex;
+    flex-direction: column;
+}
+    .sub1 .sub2 .sub3{
+        display: flex;
+        flex-direction: column;
+        background-size:auto;
+        width: 400px;
+        height: 300px;
+    }
+    .mainbg1{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height:300px ;
+        font-size: small;
+    }
+    img{
+        width: 280px;
+        height: 170px;
+        
+    }
+
+   
+}
+
+
+@media screen and (max-width: 670px) {
+    .top{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+       
+    }
+    .acr{
+        display: flex;
+        flex-direction: row;
+    }
+    .sub1 .sub2 .sub3{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        align-content: center;
+        background-size: 200px;
+    }
+    .mainbg1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 320px;
+        height: 250px;
+        padding:30px;
+        font-size: small;
+    }
+    img{
+        width: 230px;
+        height: 120px;
+        
+    }
+
+   
+}
+
+  
