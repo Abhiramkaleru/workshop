@@ -13,4 +13,4 @@ CSS: For styling the webpage.
 
 #How to Use
 Clone the repository.
-Open index.html in your web browser to view the webpage.
+Open workshop.html in your web browser to view the webpage.
