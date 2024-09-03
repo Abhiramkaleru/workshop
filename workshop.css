@@ -8,8 +8,6 @@
 
 .top {
   position: fixed;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -17,7 +15,6 @@
 ol li {
   list-style: none;
   display: inline-block;
-
 }
 .top a {
   text-decoration: none;
@@ -28,6 +25,7 @@ ol li {
 .sub1 {
   background-image: url(img1.avif);
   background-position: center;
+  object-fit: fill;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
@@ -40,6 +38,7 @@ ol li {
 .sub2 {
   background-image: url(img3.avif);
   background-position: center;
+  object-fit: fill;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
@@ -54,6 +53,7 @@ ol li {
   background-image: url(img4.avif);
   background-position: center;
   background-repeat: no-repeat;
+ object-fit: fill;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
@@ -86,7 +86,6 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
-   
   .top {
     display: flex;
     flex-direction: column;
@@ -95,11 +94,6 @@ footer {
     height: 100vh;
     text-align: center;
     font-size: small;
-
-  }
-  .acr {
-    /* display: flex;
-    flex-direction: column; */
   }
   .sub1 .sub2 .sub3 {
     display: flex;
